@@ -14,8 +14,12 @@
     <body>
         <h1>Hello World!</h1>
         <!-- accion forward -->
-        <%--<jsp:forward page="vista2.jsp"/> --%>
+        <jsp:forward page="vista2.jsp">
+            <jsp:param name="parametro" value='<%=request.getParameter("parametro")%>'/>
+         </jsp:forward>    
+       
         <%--<jsp:include page="vista2.jsp"/>--%>
-        <jsp:include page="Test"/>
+        <%--<jsp:include page="Test"/> --%>
+        
     </body>
 </html>
