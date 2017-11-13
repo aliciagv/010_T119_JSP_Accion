@@ -5,7 +5,8 @@
 --%>
 <% String parametro = request.getParameter("parametro"); %>
 <jsp:useBean id="emp" class="com.cice.dto.Empleado" scope="session"/>
-<%emp.setNombre("Alicia");%>
+<jsp:setProperty name="emp" property="nombre" value="Alejandro" />
+<% //emp.setNombre("Alicia");%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
